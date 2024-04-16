@@ -5,11 +5,10 @@ import { HomeComponent } from './components/home/home.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HomeComponent],
-  providers: [],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Front-End';
+  title = 'landing-page';
 }
