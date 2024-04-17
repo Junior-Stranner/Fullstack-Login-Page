@@ -20,6 +20,9 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig {
 
     @Autowired
+    private CustomUserDetailsService userDetailsService;
+
+    @Autowired
     SecurityFilter securityFilter;
 
     @Bean
@@ -35,10 +38,6 @@ public class SecurityConfig {
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class);
         return http.build();
     }
-    @Bean
-    public SecurityFilter securityFilter(){
-        return new SecurityFilter();
-    }
 
     @Bean
     public PasswordEncoder passwordEncoder() {
@@ -49,6 +48,5 @@ public class SecurityConfig {
     public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
-
 
 }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "landing-page": {
+    "login-page": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/landing-page",
+            "outputPath": "dist/login-page",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -32,12 +32,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -67,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "landing-page:build:production"
+              "buildTarget": "login-page:build:production"
             },
             "development": {
-              "buildTarget": "landing-page:build:development"
+              "buildTarget": "login-page:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "landing-page:build"
+            "buildTarget": "login-page:build"
           }
         },
         "test": {
@@ -104,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "320aacdc-f83c-42df-a892-8a9ae198c191"
+    "analytics": "a0e10eb1-8086-4f82-9263-b2497cbfe1a8"
   }
 }

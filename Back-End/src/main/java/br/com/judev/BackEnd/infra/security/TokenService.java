@@ -57,6 +57,6 @@ public class TokenService {
     }
     // Método para gerar a data de expiração do token (2 horas a partir do momento atual)
     private Instant generateExpirationDate() {
-        return LocalDateTime.now().plusHours(2).toInstant(ZoneOffset.of("-3:00"));
+        return LocalDateTime.now().plusHours(2).toInstant(ZoneOffset.ofHours(-3));
     }
 }
