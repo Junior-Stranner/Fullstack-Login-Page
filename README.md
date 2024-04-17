@@ -72,10 +72,18 @@ Here you can list the main routes of your API, and what are their expected reque
 [💾 Commit pattern](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
 
 
+Cadastro
+![alt text](<Tela Cadastro Signup.png>)
+
+
+Login
 ![alt text](<Tela Login.png>)
 
-![alt text](<Registrar Usuário-1.png>) 
-
-![alt text](<login feito com sucesso-1.png>) 
-
 ![alt text](<pega o tokrn e manda para info-1.png>)
+
+![alt text](<Registrar Usuário-1.png>)
+
+![alt text](<login feito com sucesso-1.png>)
+
+![alt text](<user Autenticado.png>)
+
